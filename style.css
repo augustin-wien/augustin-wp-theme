@@ -1,15 +1,33 @@
 /*
-Theme Name: Augustin WP Theme
-Theme URI: https://wordpress.org/themes/twentytwentythree
-Author: the WordPress team
+Theme Name: Augustin
+Theme URI: https://convive.io
+Author: Convive*
 Author URI: https://convive.io
-Description: Twenty Twenty-Three is designed to take advantage of the new design tools introduced in WordPress 6.1. With a clean, blank base as a starting point, this default theme includes ten diverse style variations created by members of the WordPress community. Whether you want to build a complex or incredibly simple website, you can do it quickly and intuitively through the bundled styles or dive into creation and full customization yourself.
-Requires at least: 6.1
-Tested up to: 6.3
-Requires PHP: 5.6
-Version: 1.2
+Description: 
+Requires at least: 6.0
+Tested up to: 6.4
+Requires PHP: 5.7
+Version: 1.0.0
 License: GNU General Public License v2 or later
-License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
-Text Domain: augustin-wp-theme
-Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, featured-images, full-site-editing, block-patterns, rtl-language-support, sticky-post, threaded-comments, translation-ready, wide-blocks, block-styles, style-variations, accessibility-ready, blog, portfolio, news
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Template: twentytwentyfour
+Text Domain: augustin
+Tags: blog, news, portfolio, one-column, wide-blocks, accessibility-ready, block-patterns, block-styles, custom-colors, custom-logo, custom-menu, editor-style, featured-images, full-site-editing, rtl-language-support, sticky-post, style-variations, threaded-comments, translation-ready, 
 */
+
+.is-style-pill a {
+    background-color: var(--wp--preset--color--contrast-2) !important;
+    color: var(--wp--preset--color--base-2) !important;
+}
+
+#editorial {
+    margin-top: -80px !important;
+    padding-top: 80px !important;
+}
+
+@media (max-width: 600px) {
+    .wp-block-post-template-is-layout-grid.wp-block-post-template-is-layout-grid.wp-block-post-template-is-layout-grid.wp-block-post-template-is-layout-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        font-size: 0.9em;
+    }
+}
