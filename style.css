@@ -31,3 +31,44 @@ Tags: blog, news, portfolio, one-column, wide-blocks, accessibility-ready, block
         font-size: 0.9em;
     }
 }
+
+.wp-block-navigation__responsive-container-open svg {
+    display: none;
+}
+.wp-block-navigation__responsive-container-open:after{
+    content: url('./assets/icons/menu.svg');
+}
+
+.wp-block-navigation__responsive-container-close svg{
+    display: none;
+}
+
+.wp-block-navigation__responsive-container-close:after{
+    content: url('./assets/icons/menuClose.svg');
+}
+.entry-content p{
+    text-align: justify;
+}
+.wp-block-post-excerpt__excerpt{
+    text-align: justify;
+}
+
+.taxonomy-category.is-style-pill a {
+    padding: 0.1rem 0.3rem;
+    margin-top: 0.5rem;
+    font-size: smaller;
+
+  }
+@media screen and (max-width: 600px) {
+    .papers-template-default .entry-content p{
+
+        font-size: smaller;
+    }
+    .papers-template-default .wp-block-post-excerpt__excerpt{
+        font-size: smaller;
+    }
+    .has-global-padding {
+        padding-right: 10px;
+        padding-left: 10px;
+      }
+}
